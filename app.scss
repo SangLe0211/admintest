@@ -89,6 +89,7 @@ body{
                             border: 3px solid cyan;
                             
                             }
+
                         }
                         .lable_account{
                             width: 50%;
@@ -107,6 +108,29 @@ body{
                             } 
                             
                             
+                        }
+                        .btn{
+                          height: 40px;
+                          width: 40px;
+                          text-align: center;
+                          background: var(--chudao);
+                          border-radius: 3px;
+                          cursor: pointer;
+                          transition: left 0.4s ease;
+                          display: none;
+                          position: absolute;
+                          right: 0;
+                          top: 0;
+                      
+                          // &.click{
+                          //   left: 15px;
+  
+                          // }
+                          span{
+                              color:cyan;
+                              font-size: 28px;
+                              line-height: 45px;
+                            }
                         }
                         
                     }
@@ -194,7 +218,7 @@ body{
             &_right{
                 width: calc(100% - 270px);
                 height: 100%;
-                background-color: #eef1f5;
+                background-color: white;
                 margin-left: 270px;
                 transition: all 0.4s ease;
                 &-path{
@@ -207,6 +231,7 @@ body{
                     align-items: center;
                     padding: 0 10px;
                     transition: all 0.4s ease;
+                    
                     .btn{
                         height: 40px;
                         width: 40px;
@@ -239,7 +264,7 @@ body{
                         height: calc(100vh - 220px);
                         background-color: white;
                         border-radius: 15px;
-                        box-shadow: 0px 0px 15px var(--chudaohover);
+                       
                     }
                 }
                 &.click{
@@ -277,13 +302,15 @@ body{
       margin-left: 0;
     }
   }
-  // .wraper_center_main_right-path{
-  //   &.click{
-  //     margin-left: 270px;
-  //   }
-  // }
   .wraper_center_header-left{
     width: 100%;
+  }
+  .wraper_center_main_right-main{
+    padding: 0;
+    &--center{
+      border-radius: 0;
+      height: calc(100vh - 180px);
+    }
   }
 }
 
@@ -316,10 +343,7 @@ body{
       left: 0;
       width: 100%;
       transition: all 0.4s ease;
-      
       .wraper_center_main_right-path{
-        width: 100%;
-        right: inherit;
         margin-left: 270px;
       }
   }
@@ -332,30 +356,48 @@ body{
     }
   }
   .wraper_center_main_right{
-      .wraper_center_main_right-path.click{
+
+      .wraper_center_main_right-path{
+      height: 40px;
+      span{
+        
+        line-height: 40px;
+        
+      }
+      &.click{
         width: 50px;
         right: inherit;
         transition: all 0.4s ease;
-        margin-left: 325px;
-        background-color: transparent;
-        border: none;
-        outline: none;
-        border: 1px solid cyan;
+        margin-left: 100%;
         .btn{
+          transition: all 0.4s ease;
+      
+          display: none;
           background-color: var(--chudao);
-         &.click span:before{
-      content: '\f00d';
-    }
+            &.click span:before{
+            content: '\f00d';
+            }
+            span{
+              color:cyan;
+              font-size: 28px;
+              line-height: 40px;
+              
+            }
         }
-        span{
-          color:cyan;
-          font-size: 28px;
-          line-height: 45px;
-          
-        }
-
+        
+      }
         
       }
     }
-  
+   .wraper_center_main_left .sidebar .account .btn{
+      display: block;
+      transition: all 0.4s ease;
+    
+    }
+    .wraper_center_main_right-main{
+      margin-top: 40px;
+      &--center{
+        height: calc(100vh - 170px);
+      }
+    }
 }

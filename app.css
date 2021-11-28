@@ -101,6 +101,24 @@ body {
 .wraper_center_main_left .sidebar .account .lable_account p:first-child {
   font-size: 14px;
 }
+.wraper_center_main_left .sidebar .account .btn {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  background: var(--chudao);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.wraper_center_main_left .sidebar .account .btn span {
+  color: cyan;
+  font-size: 28px;
+  line-height: 45px;
+}
 .wraper_center_main_left .sidebar ul {
   background-color: var(--chudao);
   height: 100%;
@@ -179,7 +197,7 @@ body {
 .wraper_center_main_right {
   width: calc(100% - 270px);
   height: 100%;
-  background-color: #eef1f5;
+  background-color: white;
   margin-left: 270px;
   transition: all 0.4s ease;
 }
@@ -222,7 +240,6 @@ body {
   height: calc(100vh - 220px);
   background-color: white;
   border-radius: 15px;
-  box-shadow: 0px 0px 15px var(--chudaohover);
 }
 .wraper_center_main_right.click {
   left: 0;
@@ -254,6 +271,14 @@ body {
 
   .wraper_center_header-left {
     width: 100%;
+  }
+
+  .wraper_center_main_right-main {
+    padding: 0;
+  }
+  .wraper_center_main_right-main--center {
+    border-radius: 0;
+    height: calc(100vh - 180px);
   }
 }
 @media screen and (min-width: 1537px) {
@@ -289,8 +314,6 @@ body {
     transition: all 0.4s ease;
   }
   .wraper_center_main_right.click .wraper_center_main_right-path {
-    width: 100%;
-    right: inherit;
     margin-left: 270px;
   }
 }
@@ -299,26 +322,42 @@ body {
     width: 100%;
   }
 
+  .wraper_center_main_right .wraper_center_main_right-path {
+    height: 40px;
+  }
+  .wraper_center_main_right .wraper_center_main_right-path span {
+    line-height: 40px;
+  }
   .wraper_center_main_right .wraper_center_main_right-path.click {
     width: 50px;
     right: inherit;
     transition: all 0.4s ease;
-    margin-left: 325px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border: 1px solid cyan;
+    margin-left: 100%;
   }
   .wraper_center_main_right .wraper_center_main_right-path.click .btn {
+    transition: all 0.4s ease;
+    display: none;
     background-color: var(--chudao);
   }
   .wraper_center_main_right .wraper_center_main_right-path.click .btn.click span:before {
     content: "\f00d";
   }
-  .wraper_center_main_right .wraper_center_main_right-path.click span {
+  .wraper_center_main_right .wraper_center_main_right-path.click .btn span {
     color: cyan;
     font-size: 28px;
-    line-height: 45px;
+    line-height: 40px;
+  }
+
+  .wraper_center_main_left .sidebar .account .btn {
+    display: block;
+    transition: all 0.4s ease;
+  }
+
+  .wraper_center_main_right-main {
+    margin-top: 40px;
+  }
+  .wraper_center_main_right-main--center {
+    height: calc(100vh - 170px);
   }
 }
 

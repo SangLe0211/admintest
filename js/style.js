@@ -3,7 +3,7 @@ $('.btn').click(function(){
     $('.wraper_center_main_left').toggleClass("show");
     $('.wraper_center_main_right').toggleClass("click");
     $('.wraper_center_main_right-path').toggleClass("click");
-    $('.tital').toggleClass("click");
+    $('.times').toggleClass("click");
   });
   
     $('.feat-btn').click(function(){
