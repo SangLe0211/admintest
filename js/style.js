@@ -2,7 +2,7 @@ $('.btn').click(function(){
     $(this).toggleClass("click");
     $('.wraper_center_main_left').toggleClass("show");
     $('.wraper_center_main_right').toggleClass("click");
-    $('.menu_row').toggleClass("click");
+    $('.wraper_center_main_right-path').toggleClass("click");
     $('.tital').toggleClass("click");
   });
   
